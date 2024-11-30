@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keira_92_20 Kolaborasi TIK IPS PPKN</title>
+    <link rel="stylesheet" href="multilateral.css">
+    <link rel="icon" href="https://pixels.crd.co/assets/images/gallery09/c20f17fc.gif?v=99d3974e" type="image/png">
+</head>
+<div id="audio-controls">
+    <label for="volume-slider">Adjust Volume:</label>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.3">
+    <button id="play-music">Play Music</button>
+    <button id="stop-music">Stop Music</button>
+</div>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ips.html">IPS</a></li>
+                <li><a href="dp.html">Daftar Pustaka</a></li>
+                <li class="dropdown">
+                    <a href="#cooperation" class="dropbtn">Kerjasama</a>
+                    <ul class="dropdown-content">
+                        <li><a href="bilateral.html">Bilateral</a></li>
+                        <li><a href="regional.html">Regional</a></li>
+                        <li><a href="multilateral.html">Multilateral</a></li>
+                        <li><a href="sdgs.html">SDGs</a></li>
+                </li>
+            </ul>
+        </nav>
+        <h1>Keira 92/20</h1>
+    </header>
+    <section id="multilateral">
+        <h2>Kerja Sama Multilateral ୧ ‧₊˚🌿࿔</h2>
+        <div class="content-container">
+            <div class="column">
+                <h3>Pengenalan</h3>
+                <p>Kerja sama multilateral adalah bentuk kolaborasi yang melibatkan lebih dari dua negara atau
+                    organisasi internasional untuk mencapai tujuan bersama. Kerja sama ini biasanya dilakukan dalam
+                    kerangka organisasi internasional atau perjanjian internasional, seperti Perserikatan Bangsa-Bangsa
+                    (PBB), Organisasi Perdagangan Dunia (WTO), dan Bank Dunia. Tujuan utama dari kerja sama multilateral
+                    adalah mengatasi tantangan global yang tidak dapat diselesaikan oleh satu atau beberapa negara saja,
+                    seperti perubahan iklim, perdamaian dunia, perdagangan internasional, dan pengentasan kemiskinan.
+                </p>
+                <h3>Ciri-ciri</h3>
+                <ul>
+                    <li>Melibatkan Banyak Pihak - Kerja sama ini melibatkan berbagai negara dengan latar belakang
+                        ekonomi, sosial, dan politik yang berbeda, sehingga memerlukan pendekatan yang inklusif dan
+                        kompromi.</li>
+                    <li>Berbasis Kesepakatan Global - Setiap negara peserta memiliki hak dan kewajiban yang diatur
+                        melalui perjanjian internasional atau konvensi. Semua keputusan biasanya diambil berdasarkan
+                        konsensus.</li>
+                    <li>Bertujuan Mengatasi Masalah Bersama - Kerja sama multilateral fokus pada isu-isu yang bersifat
+                        lintas negara, seperti pelestarian lingkungan, stabilitas ekonomi global, perlindungan hak asasi
+                        manusia, dan pencegahan konflik.</li>
+                </ul>
+                <h3>Contoh Kerja Sama</h3>
+                <ul>
+                    <li>Perjanjian Paris</li>
+                    <li>Organisasi Perdagangan Dunia</li>
+                    <li>Program Pembangunan PBB</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Manfaat</h3>
+                <ul>
+                    <li>Efisiensi Sumber Daya</li>
+                    <li>Meningkatkan Stabilitas Global</li>
+                    <li>Mendukung Pembangunan Berkelanjutan</li>
+                </ul>
+                <h3>Tantangan</h3>
+                <ul>
+                    <li>Perbedaan Kepentingan</li>
+                    <li>Ketimpangan Kekuasaan</li>
+                    <li>Pelaksanaan Kesepakatan</li>
+                </ul>
+                <h3>Kesimpulan</h3>
+                <p>Kerja sama multilateral adalah kolaborasi yang melibatkan banyak negara untuk menghadapi tantangan
+                    global, seperti perubahan iklim, perdagangan internasional, dan perdamaian dunia. Dengan prinsip
+                    inklusivitas dan konsensus, kerja sama ini efektif mengatasi isu lintas batas yang tidak dapat
+                    diselesaikan secara individu. Meski memiliki manfaat besar seperti efisiensi sumber daya dan
+                    stabilitas global, tantangan seperti perbedaan kepentingan dan ketimpangan kekuasaan tetap harus
+                    dikelola dengan bijak agar kerja sama multilateral dapat memberikan dampak yang maksimal.</p>
+                    
+            </div>
+        </div>
+        <a href="#home">Kembali ke atas</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Keira 92/20</p>
+    </footer>
+</body>
+
+</html>
+</section>
+
+<body>
+    <audio id="backgroundAudio" autoplay loop>
+        <source src="Bôa - Duvet  Smooth Loop of That Part (1 Hour).mp3" type="audio/mpeg">
+
+    </audio>
+</body>
+<script src="music.js"></script>
+<script>
+    window.addEventListener("load", () => {
+        const audio = document.getElementById("backgroundAudio");
+        audio.volume = 0.1; // Set default volume
+        window.addEventListener('beforeunload', () => {
+            localStorage.setItem('audioTime', audio.currentTime);
+        });
+    });
+</script>

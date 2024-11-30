@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+</head>
+<body>
+    <audio id="backgroundAudio" autoplay loop>
+        <source src="Bôa - Duvet  Smooth Loop of That Part (1 Hour).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<script>
+    // Ensure audio plays even after navigation
+    window.addEventListener("load", () => {
+        const audio = document.getElementById("backgroundAudio");
+        audio.volume = 0.2; // Set default volume
+    });
+</script>
+</html>
